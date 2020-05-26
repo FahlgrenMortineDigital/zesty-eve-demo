@@ -1,0 +1,31 @@
+.option-block {
+    align-items: center;
+    background-color: $theme-light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem;
+    position: relative;
+
+    &::before {
+        background: $theme-red;
+        content: '\00a0 ';
+        height: 0;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    &.active {
+        background-color: $theme-dark-gray;
+
+        &::before {
+            height: 7px;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}

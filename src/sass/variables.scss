@@ -1,0 +1,54 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+// $font-family-base: Helvetica, Arial, sans-serif;
+$headings-font-weight: 700;
+
+// // Colors
+// $blue: #3490dc;
+// $indigo: #6574cd;
+// $purple: #9561e2;
+// $pink: #f66d9b;
+// $red: #e3342f;
+// $orange: #f6993f;
+// $yellow: #ffed4a;
+// $green: #38c172;
+// $teal: #4dc0b5;
+// $cyan: #6cb2eb;
+//
+//
+// Colors
+$theme-red: #ff0000;
+$theme-dark-gray: #d8d8d8;
+$theme-light-gray: #eaeaea;
+
+$theme-colors: (
+    'black': #000,
+    'theme-border': #979797,
+    'theme-light-gray': $theme-light-gray,
+    'theme-dark-gray': $theme-dark-gray,
+    'theme-red': $theme-red
+);
+
+$spacer: 1rem !default;
+$spacers: (
+    gutter: 15px,
+    gutter2: 30px,
+    minus_gutter: -15px,
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    2rem: ($spacer * 2),
+    2_5rem: ($spacer * 2.5),
+    3rem: ($spacer * 3),
+    3_5rem: ($spacer * 3.5),
+    4rem: ($spacer * 4),
+    5rem: ($spacer * 5),
+    6rem: ($spacer * 6),
+    8rem: ($spacer * 8),
+    9rem: ($spacer * 9),
+);

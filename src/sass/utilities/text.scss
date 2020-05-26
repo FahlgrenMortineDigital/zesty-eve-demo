@@ -1,0 +1,42 @@
+$text-sizes: (
+        9: .5rem,
+        10: .625rem,
+        11: .6875rem,
+        12: .75rem,
+        13: .8125rem,
+        14: .875rem,
+        15: .9375rem,
+        16: 1rem,
+        18: 1.125rem,
+        20: 1.25rem,
+        21: 1.3125rem,
+        22: 1.375rem,
+        24: 1.5rem,
+        26: 1.625rem,
+        28: 1.75rem,
+        32: 2rem,
+        34: 2.125rem,
+        38: 2.375rem,
+        39: 2.4375rem,
+        40: 2.5rem,
+        48: 3rem,
+        52: 3.25rem,
+        56: 3.5rem,
+        60: 3.75rem,
+);
+
+@mixin text-size($size, $value) {
+    @each $breakpoint in map-keys($grid-breakpoints) {
+        @include media-breakpoint-up($breakpoint) {
+            $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+            .text-size#{$infix}-#{$size} {
+                font-size: #{$value} !important;
+            }
+        }
+    }
+}
+
+@each $size, $value in $text-sizes {
+    @include text-size($size, $value)
+}
